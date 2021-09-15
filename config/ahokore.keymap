@@ -15,19 +15,19 @@
 
 / {
     behaviors {
-         dot_exclam: dot_exclam {
+            comma_exclam: comma_exclam {
             compatible = "zmk,behavior-mod-morph";
-            label = "DOT_EXCLAM";
+            label = " COMMA_EXCLAM";
             #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp EXCL>;
+            bindings = <&kp COMMA>, <&kp EXCL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        comma_qmark: comma_qmark {
+        dot_qmark: dot_qmark {
             compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_QUESTION";
+            label = "DOT_QUESTION";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp QMARK>;
+            bindings = <&kp DOT>, <&kp QMARK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
@@ -97,9 +97,9 @@
 
         MAIN_layer {
             bindings = <
-                &kp Y &kp C &kp L &kp M        &kp K          &kp Z     &kp F        &kp U    &dot_exclam  &kp FSLH
-                &kp I &kp S &kp R &kp T        &kp G          &kp P     &kp N        &kp E    &kp A        &kp O
-                &kp Q &kp V &kp P &kp D        &kp J          &kp B     &kp H        &kp APOS &comma_qmark &kp X
+                &kp Y &kp C &kp L &kp M        &kp K          &kp Z     &kp F        &kp U    &comma_exclam &kp FSLH
+                &kp I &kp S &kp R &kp T        &kp G          &kp P     &kp N        &kp E    &kp A         &kp O
+                &kp Q &kp V &kp W &kp D        &kp J          &kp B     &kp H        &kp APOS &dot_qmark    &kp X
                             &none &sl SYM_LMOD &lt NAV SPC    &sk RSHFT &sl NUM_RMOD &none
             >;
         };
