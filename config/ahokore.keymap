@@ -107,7 +107,7 @@
         SYM_LMOD_layer {
             bindings = <
                 &none     &kp LC(W)      &kp LC(Q)  &kp LC(T) &none        &kp LBRC  &kp DEL   &kp RBRC &kp HASH  &kp TILDE
-                &sk LSHFT &LALT          &sk LCTRL  &sk LGUI  &kp PSCRN    &kp LPAR  &kp BSPC  &kp RPAR &kp LT    &kp PIPE
+                &sk LSHFT &sk LALT       &sk LCTRL  &sk LGUI  &kp PSCRN    &kp LPAR  &kp BSPC  &kp RPAR &kp LT    &kp PIPE
                 &none     &kp S(C(TAB))) &kp C(TAB) &none     &kp CAPS     &kp LBKT  &kp ENTER &kp RBKT &kp GT    &kp AT
                                          &none      &none     &none        &trans    &sl FN    &none
             >;
